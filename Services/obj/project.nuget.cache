@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8hURMaGDcM8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leoni\\RiderProjects\\CRUDSolution\\Services\\Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leoni\\.nuget\\packages\\bogus\\35.6.5\\bogus.35.6.5.nupkg.sha512"
+  ],
+  "logs": []
+}

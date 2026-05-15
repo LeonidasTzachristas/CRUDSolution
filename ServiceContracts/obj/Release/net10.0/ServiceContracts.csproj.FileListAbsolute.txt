@@ -1,0 +1,17 @@
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\bin\Debug\net10.0\DotNetDisassembler\net10.0\ServiceContracts.deps.json
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\bin\Debug\net10.0\DotNetDisassembler\net10.0\ServiceContracts.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\bin\Debug\net10.0\DotNetDisassembler\net10.0\ServiceContracts.pdb
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.pdb
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\ServiceContracts.csproj.AssemblyReference.cache
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\ServiceContracts.AssemblyInfoInputs.cache
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\ServiceContracts.AssemblyInfo.cs
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\ServiceContracts.csproj.CoreCompileInputs.cache
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\ServiceC.04662A29.Up2Date
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\ServiceContracts.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\refint\ServiceContracts.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\ServiceContracts.pdb
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\obj\Release\net10.0\ref\ServiceContracts.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\Services\bin\Debug\net10.0\DotNetDisassembler\net10.0\ServiceContracts.deps.json
+C:\Users\leoni\RiderProjects\CRUDSolution\Services\bin\Debug\net10.0\DotNetDisassembler\net10.0\ServiceContracts.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\Services\bin\Debug\net10.0\DotNetDisassembler\net10.0\ServiceContracts.pdb

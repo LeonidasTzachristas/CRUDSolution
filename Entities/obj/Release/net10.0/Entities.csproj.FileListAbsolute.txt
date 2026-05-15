@@ -1,0 +1,17 @@
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.deps.json
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\ServiceContracts\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.pdb
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\obj\Release\net10.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\obj\Release\net10.0\Entities.AssemblyInfoInputs.cache
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\obj\Release\net10.0\Entities.AssemblyInfo.cs
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\obj\Release\net10.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\obj\Release\net10.0\Entities.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\obj\Release\net10.0\refint\Entities.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\obj\Release\net10.0\Entities.pdb
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\obj\Release\net10.0\ref\Entities.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\Services\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.deps.json
+C:\Users\leoni\RiderProjects\CRUDSolution\Services\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\Services\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.pdb
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.deps.json
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\Entities\bin\Debug\net10.0\DotNetDisassembler\net10.0\Entities.pdb
