@@ -1,4 +1,6 @@
-﻿using ServiceContracts;
+﻿using Entities;
+using Microsoft.EntityFrameworkCore;
+using ServiceContracts;
 using ServiceContracts.DTO;
 using Services;
 using Xunit.Abstractions;
@@ -13,7 +15,8 @@ public class CountriesServiceTest
 
     public CountriesServiceTest(ITestOutputHelper outputHelper)
     {
-        _countryService = new CountriesService(false);
+        _countryService = new CountriesService(new PersonsDbContext
+            (new DbContextOptionsBuilder<PersonsDbContext>().Options));
         _outputHelper = outputHelper;
     }
 

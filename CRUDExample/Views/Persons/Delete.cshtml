@@ -1,0 +1,38 @@
+﻿@model PersonResponse
+@{
+    ViewBag.Title = "Delete Person";
+}
+<h2>Delete Person</h2>
+<div class="w-50">
+    <form asp-controller="Persons" asp-action="Delete" method="post">
+        @* Person Name *@
+        <div class="flex">
+            <div class="w-25">
+                <label asp-for="Name" class="form-label pt">Person Name</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="Name" class="form-input" disabled="disabled"/>
+                <span asp-validation-for="Name" style="color: red; font-size: 14px"></span>
+            </div>
+        </div>
+        @* Email *@
+        <div class="flex">
+            <div class="w-25">
+                <label asp-for="Email" class="form-label pt">Email</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="Email" class="form-input" disabled="disabled"/>
+                <span asp-validation-for="Email" style="color: red; font-size: 14px"></span>
+            </div>
+        </div>
+        @* Submit *@
+        <div class="flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <button class="button button-red-back">Delete</button>
+                <a style="margin: 20px" asp-controller="Persons" asp-action="Index">Go back</a>
+            </div>
+        </div>
+    </form>
+</div>

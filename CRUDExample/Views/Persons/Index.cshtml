@@ -39,7 +39,7 @@
         <div class="flex-1">
             <label>Results: @Model.Count</label>
             <button class="button button-blue-back">Search</button>
-            <a href="~/persons/index" class="link-hover">Clear all</a>
+            <a asp-controller="Persons" asp-action="Index" class="link-hover">Clear all</a>
         </div>
     </div>
     <table class="table w-100 mt">
@@ -53,6 +53,7 @@
                     { "DisplayName", n.display }
                 })
             }
+            <th>Options</th>
         </tr>
         </thead>
         <tbody>
@@ -67,6 +68,10 @@
                 <td>@p.Country</td>
                 <td>@p.Address</td>
                 <td style="width: 8%">@p.ReceiveNewsLetters</td>
+                <td style="width: 15%">
+                    <a asp-controller="Persons" asp-action="Edit" asp-route-personId="@p.PersonId">Edit</a>
+                    <a asp-controller="Persons" asp-action="Delete" asp-route-personId="@p.PersonId">Delete</a>
+                </td>
             </tr>
         }
         </tbody>

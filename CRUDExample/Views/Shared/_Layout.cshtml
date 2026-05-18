@@ -8,15 +8,16 @@
 <body>
 <div class="container">
     <div class="navbar">
-        <div class="navbar-brand">CRUD Demo</div>
+        <div class="navbar-brand"><img asp-append-version="true" alt="logo" src="~/logo.PNG" width="60px" style="margin: 0"/></div>
         <ul>
-            <li><a href="~/persons/index">Persons</a></li>
-            <li><a href="~/persons/create">Create Person</a></li>
+            <li><a asp-controller="Persons" asp-action="Index">Persons</a></li>
+            <li><a asp-controller="Persons" asp-action="Create">Create Person</a></li>
         </ul>
     </div>
     <div class="page-content">
         @RenderBody()
     </div>
 </div>
+@await RenderSectionAsync("scripts", required:false)
 </body>
 </html>

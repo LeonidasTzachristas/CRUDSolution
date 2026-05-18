@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
@@ -47,20 +48,27 @@ public class PersonsController : Controller
     }
 
     [HttpGet]
-    // [Route("")]
     public IActionResult Create()
     {
         var countries = _countryService.GetAllCountries();
-        ViewBag.Countries = countries;
+        ViewBag.Countries = countries.Select(c => new SelectListItem() 
+        {
+            Text = c.Name,
+            Value = c.CountryId.ToString()
+        });
+        
         return View();
     }
 
     [HttpPost]
-    // [Route("")]
     public IActionResult Create(PersonAddRequest personAddRequest)
     {
         var countries = _countryService.GetAllCountries();
-        ViewBag.Countries = countries;
+        ViewBag.Countries = countries.Select(c => new SelectListItem() 
+        {
+            Text = c.Name,
+            Value = c.CountryId.ToString()
+        });
         if (!ModelState.IsValid)
         {
             var errors = ModelState.Values.SelectMany(v => v.Errors)
@@ -70,6 +78,53 @@ public class PersonsController : Controller
         }
 
         var createdPerson = _personService.AddPerson(personAddRequest);
+        return RedirectToAction("Index", "Persons");
+    }
+
+    [HttpGet]
+    [Route("{personId}")]
+    public IActionResult Edit(Guid personId)
+    {
+        PersonResponse? person = _personService.GetPersonById(personId);
+        if (person is null)
+            return RedirectToAction("Index");
+
+        var countries = _countryService.GetAllCountries();
+        ViewBag.Countries = countries.Select(c => new SelectListItem() 
+        {
+            Text = c.Name,
+            Value = c.CountryId.ToString()
+        });
+        
+        PersonUpdateRequest updateRequest = person.ToPersonUpdateRequest();
+        
+        return View(updateRequest);
+    }
+
+    [HttpPost]
+    [Route("{personId}")]
+    public IActionResult Edit(PersonUpdateRequest personUpdate)
+    {
+        _personService.UpdatePerson(personUpdate);
+        return RedirectToAction("Index", "Persons");
+    }
+
+    [HttpGet]
+    [Route("{personId}")]
+    public IActionResult Delete(Guid personId)
+    {
+        PersonResponse? personToDelete = _personService.GetPersonById(personId);
+        if (personToDelete is null)
+            return RedirectToAction("Index", "Persons");
+        
+        return View(personToDelete);
+    }
+
+    [HttpPost]
+    [Route("{personId}")]
+    public IActionResult Delete(PersonResponse person)
+    {
+        _personService.DeletePerson(person.PersonId);
         return RedirectToAction("Index", "Persons");
     }
 }

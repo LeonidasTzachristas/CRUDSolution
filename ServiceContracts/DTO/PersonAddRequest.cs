@@ -11,15 +11,22 @@ public class PersonAddRequest
     
     [Required(ErrorMessage = "{0} cannot be empty")]
     [EmailAddress(ErrorMessage = "{0} should be a valid email")]
+    [DataType(DataType.EmailAddress)]
     public string? Email { get; set; }
     
     [Required]
+    [DataType(DataType.Date)]
     public DateTime? DateOfBirth { get; set; }
     
     
     [Required]
     public GenderOptions? Gender { get; set; }
+    
+    [Required]
+    [Display(Name= "Country")]
     public Guid? CountryId { get; set; }
+    
+    [Required]
     public string? Address { get; set; }
     public bool ReceiveNewsLetters { get; set; }
 

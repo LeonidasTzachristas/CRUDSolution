@@ -1,4 +1,5 @@
 ﻿using Entities;
+using Microsoft.EntityFrameworkCore;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
@@ -16,8 +17,13 @@ public class PersonServiceTest
     public PersonServiceTest(ITestOutputHelper outputHelper)
     {
         _outputHelper = outputHelper;
-        _personService = new PersonService(false);
-        _countryService = new CountriesService(false);
+        
+        _countryService = new CountriesService(new PersonsDbContext
+            (new DbContextOptionsBuilder<PersonsDbContext>().Options));
+        
+        _personService = new PersonService(new PersonsDbContext
+                (new DbContextOptionsBuilder<PersonsDbContext>().Options),
+            _countryService);
     }
 
     // Helper Method to add a few countries and persons
