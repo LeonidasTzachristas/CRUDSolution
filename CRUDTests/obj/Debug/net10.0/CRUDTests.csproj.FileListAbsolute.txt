@@ -103,3 +103,4 @@ C:\Users\leoni\RiderProjects\CRUDSolution\CRUDTests\bin\Debug\net10.0\ServiceCon
 C:\Users\leoni\RiderProjects\CRUDSolution\CRUDTests\bin\Debug\net10.0\Services.pdb
 C:\Users\leoni\RiderProjects\CRUDSolution\CRUDTests\bin\Debug\net10.0\Entities.pdb
 C:\Users\leoni\RiderProjects\CRUDSolution\CRUDTests\bin\Debug\net10.0\Bogus.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\CRUDTests\obj\Debug\net10.0\CRUDTests.sourcelink.json

@@ -24,7 +24,7 @@ public class CountriesService : ICountryService
                 new Country() { CountryId = Guid.Parse("0E241979-E826-47E9-837F-C0533E5F88FF"), Name = "France" },
                 new Country() { CountryId = Guid.Parse("4FFA4035-1DDF-4005-A72A-48FF4D47F7AB"), Name = "Germany" },
                 new Country() { CountryId = Guid.Parse("657D8B4A-FBA4-4B99-AD17-F738DD7D8F7F"), Name = "England" },
-                new Country() { CountryId = Guid.Parse("D04E3EA8-E52E-480C-9ABF-15D2D97586B9"), Name = "U.S.A" },
+                new Country() { CountryId = Guid.Parse("D04E3EA8-E52E-480C-9ABF-15D2D97586B9"), Name = "USA" },
                 new Country() { CountryId = Guid.Parse("9254EEF2-45B1-4F09-9A7D-423A9E582A8C"), Name = "Russia" });
             
             

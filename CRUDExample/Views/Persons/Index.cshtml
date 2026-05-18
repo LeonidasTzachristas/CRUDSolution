@@ -1,4 +1,74 @@
-﻿@{
+﻿@using ServiceContracts
+@model List<PersonResponse>
+@{
     ViewBag.Title = "Persons";
+    (string name, string display)[] gridTitles =
+    [
+        (nameof(PersonResponse.Name), "Person Name"),
+        (nameof(PersonResponse.Email), "Email"),
+        (nameof(PersonResponse.DateOfBirth), "Date of Birth"),
+        (nameof(PersonResponse.Age), "Age"),
+        (nameof(PersonResponse.Gender), "Gender"),
+        (nameof(PersonResponse.Country), "Country"),
+        (nameof(PersonResponse.Address), "Address"),
+        (nameof(PersonResponse.ReceiveNewsLetters), "Receive Newsletter")
+    ];
 }
-<h1>Persons</h1>
+<form asp-controller="Persons" asp-action="Index" method="get">
+    <h1>Persons</h1>
+    <div class="box flex">
+        <div class="flex-1">
+            <select class="form-input" name="searchBy">
+                @foreach (var field in ViewBag.SearchFields)
+                {
+                    if (field.Key == ViewBag.CurrentSearchBy)
+                    {
+                        <option value="@field.Key" selected="selected">@field.Value</option>
+                    }
+                    else
+                    {
+                        <option value="@field.Key">@field.Value</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="flex-1">
+            <input type="search" id="Search" class="form-input"
+                   placeholder="Search" name="searchString" value="@ViewBag.CurrentSearchString"/>
+        </div>
+        <div class="flex-1">
+            <label>Results: @Model.Count</label>
+            <button class="button button-blue-back">Search</button>
+            <a href="~/persons/index" class="link-hover">Clear all</a>
+        </div>
+    </div>
+    <table class="table w-100 mt">
+        <thead>
+        <tr>
+            @foreach (var n in gridTitles)
+            {
+                @await Html.PartialAsync("_GridColumnHeader", viewData: new ViewDataDictionary(ViewData)
+                {
+                    { "ColumnName", n.name },
+                    { "DisplayName", n.display }
+                })
+            }
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Name</td>
+                <td>@p.Email</td>
+                <td>@p.DateOfBirth?.ToString("dd/MM/yyyy")</td>
+                <td>@p.Age</td>
+                <td>@p.Gender</td>
+                <td>@p.Country</td>
+                <td>@p.Address</td>
+                <td style="width: 8%">@p.ReceiveNewsLetters</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</form>

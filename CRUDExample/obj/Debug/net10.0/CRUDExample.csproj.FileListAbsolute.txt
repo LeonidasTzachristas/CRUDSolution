@@ -241,3 +241,8 @@ C:\Users\leoni\RiderProjects\CRUDSolution\CRUDExample\bin\Debug\net10.0\Services
 C:\Users\leoni\RiderProjects\CRUDSolution\CRUDExample\bin\Debug\net10.0\Entities.pdb
 C:\Users\leoni\RiderProjects\CRUDSolution\CRUDExample\obj\Debug\net10.0\CRUDExample.RazorAssemblyInfo.cache
 C:\Users\leoni\RiderProjects\CRUDSolution\CRUDExample\obj\Debug\net10.0\CRUDExample.RazorAssemblyInfo.cs
+C:\Users\leoni\RiderProjects\CRUDSolution\CRUDExample\bin\Debug\net10.0\Bogus.dll
+C:\Users\leoni\RiderProjects\CRUDSolution\CRUDExample\obj\Debug\net10.0\CRUDExample.sourcelink.json
+C:\Users\leoni\RiderProjects\CRUDSolution\CRUDExample\obj\Debug\net10.0\compressed\s6dmirquta-{0}-1ravdhwven-1ravdhwven.gz
+C:\Users\leoni\RiderProjects\CRUDSolution\CRUDExample\obj\Debug\net10.0\compressed\zkcicmt3rm-{0}-1an92rnjmr-1an92rnjmr.gz
+C:\Users\leoni\RiderProjects\CRUDSolution\CRUDExample\obj\Debug\net10.0\compressed\hk60rycysd-{0}-hmor5yq6bl-hmor5yq6bl.gz

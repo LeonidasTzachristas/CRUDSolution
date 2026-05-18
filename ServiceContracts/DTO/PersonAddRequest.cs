@@ -13,9 +13,11 @@ public class PersonAddRequest
     [EmailAddress(ErrorMessage = "{0} should be a valid email")]
     public string? Email { get; set; }
     
+    [Required]
     public DateTime? DateOfBirth { get; set; }
     
     
+    [Required]
     public GenderOptions? Gender { get; set; }
     public Guid? CountryId { get; set; }
     public string? Address { get; set; }

@@ -17,7 +17,7 @@ public class PersonServiceTest
     {
         _outputHelper = outputHelper;
         _personService = new PersonService(false);
-        _countryService =new CountriesService(false);
+        _countryService = new CountriesService(false);
     }
 
     // Helper Method to add a few countries and persons
@@ -93,7 +93,7 @@ public class PersonServiceTest
     public void AddPerson_NullPersonName()
     {
         // Arrange
-        PersonAddRequest? personAddRequest = new() { Name = null };
+        PersonAddRequest personAddRequest = new() { Name = null };
 
         // Assert
         Assert.Throws<ArgumentException>(() =>
@@ -250,7 +250,7 @@ public class PersonServiceTest
     }
 
     // Add few countries, persons and search based on person Name with search string
-    // must return appropriate persons !case insensitive
+    // must return appropriate persons !case-insensitive
     [Fact]
     public void GetFilteredPersons_ProperText()
     {
@@ -357,7 +357,7 @@ public class PersonServiceTest
     public void UpdatePerson_InvalidPersonId()
     {
         // Arrange
-        PersonUpdateRequest? personUpdate = new PersonUpdateRequest() 
+        PersonUpdateRequest personUpdate = new PersonUpdateRequest() 
             { PersonId = Guid.NewGuid() };
         
         // Assert
@@ -426,7 +426,7 @@ public class PersonServiceTest
     {
         Assert.Throws<ArgumentNullException>(() =>
         {
-            var isDeleted = _personService.DeletePerson(null);
+            _personService.DeletePerson(null);
         });
     }
     
@@ -434,7 +434,6 @@ public class PersonServiceTest
     [Fact]
     public void DeletePerson_InvalidPersonId()
     {
-        var addedPersons = AddSomePersons();
         Assert.False(_personService.DeletePerson(Guid.NewGuid()));
     }
     
