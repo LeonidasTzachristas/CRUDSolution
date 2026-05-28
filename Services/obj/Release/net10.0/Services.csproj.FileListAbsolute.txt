@@ -1,5 +1,0 @@
-C:\Users\leoni\RiderProjects\CRUDSolution\Services\obj\Release\net10.0\Services.csproj.AssemblyReference.cache
-C:\Users\leoni\RiderProjects\CRUDSolution\Services\obj\Release\net10.0\Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\leoni\RiderProjects\CRUDSolution\Services\obj\Release\net10.0\Services.AssemblyInfoInputs.cache
-C:\Users\leoni\RiderProjects\CRUDSolution\Services\obj\Release\net10.0\Services.AssemblyInfo.cs
-C:\Users\leoni\RiderProjects\CRUDSolution\Services\obj\Release\net10.0\Services.csproj.CoreCompileInputs.cache
