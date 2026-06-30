@@ -1,0 +1,31 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.URLShortener.iml
+/modules.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# .NET build output
+bin/
+obj/
+# Visual Studio / Rider caches
+.vs/
+.idea/
+# user-specific files
+*.user
+*.suo
+# logs
+*.log
+# build artifacts (optional but recommended)
+*.dll
+*.exe
+*.pdb
+/logs
